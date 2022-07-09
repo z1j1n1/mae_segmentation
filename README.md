@@ -9,12 +9,25 @@ pip install mmcv-full==1.3.0 mmsegmentation==0.11.0
 pip install scipy timm==0.3.2
 ```
 
+what I do:
+```bash
+pip install torch==1.7.0 torchvision==0.8.0
+pip install scipy timm==0.3.2
+pip install mmcv-full==1.2.6 -f https://download.openmmlab.com/mmcv/dist/cu102/torch1.7.0/index.html
+pip install mmsegmentation==0.11.0
+```
+
 2. Install [apex](https://github.com/NVIDIA/apex) for mixed-precision training
 
 ```bash
 git clone https://github.com/NVIDIA/apex
 cd apex
 pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
+```
+
+what I do:
+```bash
+pip install -v --no-cache-dir ./
 ```
 
 3. Follow the guide in [mmseg](https://github.com/open-mmlab/mmsegmentation/blob/master/docs/dataset_prepare.md) to prepare the ADE20k dataset.
